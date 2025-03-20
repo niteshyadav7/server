@@ -25,7 +25,7 @@ const studentSchema = new mongoose.Schema(
     classAppearingFor: { type: String, required: true },
     previousSchool: { type: String, required: true },
     mobileNumber: {
-      type: String,
+      type: Number,
       unique: true,
       required: true,
       match: /^[0-9]{10}$/,
